@@ -107,6 +107,11 @@ git stash clear – Remove all stashes from your repository.
 Git Log Commands
 =======================================================================================================================================================================
 git log - Check the commit log or commit revisions
+git log -p -<no. of last commits you want to see> - last commits with difference
+git log --stat - Summary of Changes
+git log --pretty=oneline - Shows the log and commits information in one line
+git log --pretty=format:"%h - %an, %ar:%s" - Shows the commit information (h is revision, an is author name, ar is hours ago, s is commit message)
+git log -S <func_name> - To check when the particular changes made
 
 Git File Check/Restore Commands
 =======================================================================================================================================================================
