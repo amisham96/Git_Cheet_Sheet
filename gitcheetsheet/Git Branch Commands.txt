@@ -103,3 +103,22 @@ git stash drop <stash> – Remove a stash from the list of stashes in your repos
 git stash pop <stash> – Apply a stash to the top of the current working tree and remove it from your list of stashes.
 git stash apply <stash> – Apply a stash on top of the current working tree. The stash will not be removed from your list of stashes.
 git stash clear – Remove all stashes from your repository.
+
+Git Log Commands
+=======================================================================================================================================================================
+git log - Check the commit log or commit revisions
+
+Git File Check/Restore Commands
+=======================================================================================================================================================================
+git diff - Show the difference between the files
+git diff --cahched - Shows the diffence between files at staging area
+git restore . - Anything wrong added in the file and saved by mistake will get back you to previous version
+git restore --staged . - To restore file from staging area
+git restore --worktree . - If your file is having some change which is already added to stagging area and without committing you are changing the file again and u dont dont want new changes only want stagging area changes.
+
+Git Reset/Revert from Remote Repository
+=======================================================================================================================================================================
+git reset --soft HEAD^ - Revert the file to one revision (soft means uncommit but your changes will be present in local file)
+git reset --hard HEAD^ - Revert the file to one revision (soft means uncommit but your changes will be removed in local file)
+
+
